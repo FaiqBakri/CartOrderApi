@@ -1,0 +1,6 @@
+@CartorderApiPro_HostAddress = http://localhost:5170
+
+GET {{CartorderApiPro_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
