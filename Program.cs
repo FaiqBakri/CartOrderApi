@@ -22,6 +22,7 @@ namespace shop
                  options.UseInMemoryDatabase("CartOrderDb"));
 
             builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<ICartService, CartService>();
 
 
             var app = builder.Build();
