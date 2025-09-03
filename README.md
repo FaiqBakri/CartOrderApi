@@ -34,14 +34,14 @@ Supports **InMemory database** for quick testing and can be switched to **SQL Se
 
    ```json
    "ConnectionStrings": {
-     "DefaultConnection": "Server=.;Database=ShopDb;Trusted_Connection=True;TrustServerCertificate=True"
+     "DefaultConnection": "Server=.;Database=CartOrderDb;Trusted_Connection=True;TrustServerCertificate=True"
    }
    ```
 2. Run EF Core migrations:
 
    ```bash
-   dotnet ef migrations add InitialCreate --project src/ShopApi --startup-project src/ShopApi
-   dotnet ef database update --project src/ShopApi --startup-project src/ShopApi
+   dotnet ef migrations add InitialCreate --project src/CartOrderAPI --startup-project src/CartOrderAPI
+   dotnet ef database update --project src/CartOrderAPI --startup-project src/CartOrderAPI
    ```
 3. Run the API and open Swagger as above.
 
