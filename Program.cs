@@ -21,6 +21,9 @@ namespace shop
             builder.Services.AddDbContext<AppDbContext>(options =>
                  options.UseInMemoryDatabase("CartOrderDb"));
 
+            builder.Services.AddScoped<IOrderService, OrderService>();
+
+
             builder.Services.AddScoped<IProductService, ProductService>();
             builder.Services.AddScoped<ICartService, CartService>();
 

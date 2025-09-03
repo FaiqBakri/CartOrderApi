@@ -9,6 +9,8 @@
         public decimal Subtotal { get; set; }
         public decimal Tax { get; set; }
         public decimal Total { get; set; }
+
+        public string? UserEmail { get; set; }
         public int SourceCartId { get; set; }
         public List<OrderItemResponse> Items { get; set; } = new List<OrderItemResponse>();
     }
